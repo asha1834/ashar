@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warning Popup Example</title>
+    <script>
+        // Function to display the warning popup
+        function displayWarningPopup() {
+            // Specify the warning message
+            var warningMessage = "hai welcome to our page";
+
+            // Display the popup with the warning message
+            var userResponse = confirm(warningMessage);
+
+            // If the user clicks OK, proceed to the website
+            if (userResponse) {
+                // You can redirect the user to another page if needed
+                // window.location.href = "https://www.example.com";
+            } else {
+                // If the user clicks Cancel, stay on the current page
+            }
+        }
+
+        // Event listener to trigger the warning popup when the page loads
+        window.addEventListener("load", displayWarningPopup);
+    </script>
+</head>
+<body>
+    <!-- Your website content goes here -->
+    <h1>Welcome to Our Website</h1>
+    <p>Content goes here...</p>
+</body>
+</html>
